@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/slider1.jpg" style="width:100%; height: 500px;">
+      <div class="text"> img 1</div>
+      <div class="form"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <form action="">
+          <table>
+          <tr>
+            <th><label for="name">Name :</label></th>
+            <td><input type="text" name="name" id="name"></td>
+          </tr>
+          <tr>
+            <th><label for="email">E-Mail :</label></th>
+            <td><input type="email" name="email" id="email"></td>
+          </tr>
+          <tr>
+            <th><label for="ph">Mobile :</label></th>
+            <td><input type="number" name="ph" id="ph"></td>
+          </tr>
+          <tr>
+            <th><label for="pw">PassWord :</label></th>
+            <td><input type="password" name="name" id="name"></td>
+          </tr>
+          <tr>
+            <th><input type="submit" value="Submit" id="submit"></th>
+          </tr>
+          
+          </table>
+        </form>
+      </div>
+      
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/slider2.jpg" style="width:100%;height: 500px;">
+      <div class="text"> img 2</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/slider3.jpg" style="width:100%;height: 500px;">
+      <div class="text"> img 3</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <script src="js.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
